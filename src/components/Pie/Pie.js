@@ -16,7 +16,7 @@ const Example = () => {
 
     return (
         <div className=' main grid grid-cols-1 bg-white'>
-            <div className='ml-12 my-1'><h3>Top Products</h3></div>
+            <div className='ml-12 my-1 ' style={{fontWeight:"700"}}>Top Products</div>
 
             <div className='grid grid-cols-2 gap-12 space-between'>
 

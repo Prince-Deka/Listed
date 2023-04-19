@@ -19,7 +19,8 @@ function App() {
     top: "0px",
   }
   return (
-    // <div className="flex flex-wrap justify-center my-20 ">
+    
+    // <div className=" flex flex-wrap justify-center my-20 ">
       <Home/>
     // </div>
   );

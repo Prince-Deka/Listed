@@ -22,8 +22,8 @@ function Table() {
     <div className=' main grid grid-cols-1 bg-white'>
 
       <div className='ml-10'>
-        <div>
-          <h1>Schedule</h1>
+        <div className='' style={{fontWeight:"700"}}>
+          Schedule
         </div>
 
         <div>

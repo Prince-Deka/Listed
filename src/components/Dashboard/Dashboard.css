@@ -1,5 +1,5 @@
-.child{
-    padding:20px 10px; 
+.child {
+    padding: 20px 10px;
     margin: 1rem;
     width: 10rem;
     border-radius: 0.875rem;
@@ -8,38 +8,60 @@
     text-align: center;
 
 }
-.div1{
+
+.div1 {
     background-color: rgb(189, 215, 194);
-    border:1px solid rgb(182, 202, 187);
+    border: 1px solid rgb(182, 202, 187);
 }
-.div2{
+
+.div2 {
     background-color: rgb(236, 218, 185);
     border: 1px solid rgb(223, 201, 159);
 }
-.div3{
-    background-color:  #edcece;
+
+.div3 {
+    background-color: #edcece;
     border: 1px solid #dec0c0;
 }
-.div4{
+
+.div4 {
     background-color: #c9cded;
     border: 1px solid #b8bcd7;
 }
-@media(min-width:768px)
-{
-    .cards{
+
+@media(min-width:768px) {
+    .cards {
         flex-wrap: wrap;
     }
 }
 
-.chart{
+.chart {
     display: flex;
     background-color: white;
     position: relative;
     border-radius: 12px;
 }
-.monserrat{
+
+.monserrat {
     font-family: 'Montserrat', sans-serif,
 }
-.footer{
+
+.footer {
     margin-top: 40px;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    padding: 0.02px 3px 0.02px 3px;
+    border-radius: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 10rem;
+    transform: translateY(-50%);
 }

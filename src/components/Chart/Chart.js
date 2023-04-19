@@ -42,7 +42,7 @@ const Chart = () => {
 
   return (
     <div className='container block'>
-      <div className='block' style={{fontWeight:"700", marginTop:"1rem"}}> <div>Activities <br /><small style={{color:"gray"}}> May-June 2021 </small></div></div>
+      <div className='block' style={{fontWeight:"700", marginTop:"1rem"}}> <div className='block'> <div> Activities </div> <div style={{marginTop:"-15px"}}> <small style={{color:"gray", fontSize:"9px"}}> May-June 2021 </small> </div></div></div>
       <div className='chrt' style={{
         width: "70vw",
         height: "40vh",
@@ -51,7 +51,7 @@ const Chart = () => {
       }}>
         <ResponsiveContainer width="95%" height="80%">
 
-          <LineChart width={100} height={80} data={data}>
+          <LineChart width={100} height={100} data={data}>
             {yTicks.map((tick) => (
               <ReferenceLine y={tick * 2} stroke="#e0e0e0" strokeWidth={1} />
             ))}
