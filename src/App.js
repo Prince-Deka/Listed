@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+// 488px
+import Home from './components/Home';
 function App() {
+  const innerleft = {
+    width: "30rem",
+    height: "39rem",
+    left: "0px",
+    top: "0px",
+
+    background: "#000000",
+  }
+  // 852px
+  const innerright = {
+    position: "absolute",
+    width: "70rem",
+    height: "39rem",
+    left: "588px",
+    top: "0px",
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <div className="flex flex-wrap justify-center my-20 ">
+      <Home/>
+    // </div>
   );
 }
 

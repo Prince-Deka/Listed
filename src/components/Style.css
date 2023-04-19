@@ -1,0 +1,10 @@
+.parent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container{
+    margin: 2rem;
+    display: flex;
+    margin-top: -0.125rem;
+   
+}

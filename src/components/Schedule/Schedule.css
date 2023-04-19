@@ -1,0 +1,12 @@
+.main{
+    border-radius: 5px;
+}
+.listwrap{
+    justify-items: center;
+}
+.listitem{
+    border-left: 5px solid;
+    font-size: "10px";
+    margin-right: 1rem;
+    padding-left: 1rem;
+}
