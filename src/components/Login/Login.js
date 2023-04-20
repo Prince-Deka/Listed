@@ -12,7 +12,7 @@ import {
 
 function Login() {
 
-    const [username, setUsername] = useState("a@a.com");
+    const [email, setEmail] = useState("a@a.com");
     const [password, setPassword] = useState("a");
   
     const navigate = useNavigate();
@@ -20,12 +20,15 @@ function Login() {
 
 
     const handleSubmit = async () => {
-        if (username === "admin@admin.com" && password === "admin") {
+        if (email === "admin@admin.com" && password === "admin") {
             navigate("/home");
             return;
         }
         else{
             alert(`Since the site is in developement phase, use credentials as\n email: admin@admin.com\n password: admin`)
+            // setUsername('admin@admin.com')
+            // setPassword('admin')
+            
         }
     }
 
@@ -61,13 +64,13 @@ function Login() {
                                 {/* email div */}
                                 <div className='grid mx-3' >
                                     <label htmlFor="name">Email Address</label>
-                                    <input type="email" name='email' style={{ borderRadius: "6px", backgroundColor: "#e0d7d7", textAlign: "center" }} placeholder='email address' onChange={(e) => setUsername(e.target.value)} autoComplete="@a.com" autoFocus/>
+                                    <input type="email" name='email' id='email' style={{ borderRadius: "6px", backgroundColor: "#e0d7d7", textAlign: "center" }} placeholder='email address' onChange={(e) => setEmail(e.target.value)} autoFocus/>
                                 </div>
 
                                 {/* password div */}
                                 <div className='grid mx-3 lato-4'>
                                     <label htmlFor="name">Password</label>
-                                    <input type="password" name='password' style={{ borderRadius: "6px", backgroundColor: "#e0d7d7", textAlign: "center" }} placeholder='password' onChange={(e) => setPassword(e.target.value)} />
+                                    <input type="password" name='password' style={{ borderRadius: "6px", backgroundColor: "#e0d7d7", textAlign: "center" }} placeholder='password' onChange={(e) => setPassword(e.target.value)}/>
                                 </div>
 
                                 {/* forgot password div */}

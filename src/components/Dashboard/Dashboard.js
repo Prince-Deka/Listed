@@ -8,18 +8,14 @@ import { AiOutlineLike } from 'react-icons/ai'
 import { TbUsers } from 'react-icons/tb'
 import { BsBell } from 'react-icons/bs'
 import {FaSearch} from 'react-icons/fa'
-import {BsFillCircleFill} from 'react-icons/bs'
+import {CgProfile} from 'react-icons/cg'
 
 function Dashboard() {
 
 
 
 
-  const widgets = [
-    {
-      title: "Total Transactions"
-    }
-  ]
+
 
   return (
     // added flex-inline in the first className
@@ -28,17 +24,17 @@ function Dashboard() {
 
         <div style={{ fontWeight: "700", fontSize: "1.2rem" }}>Dashboard</div>
 
-        <div className='right float-right flex justify-around'>
+        <div className=' float-right flex justify-around'>
 
           {/*search box  */}
-          <div className='mx-2 search-container'>
+          <div className='mx-2 search-container '>
             <input type="text" placeholder="       Search..." className="search-input" />
             <FaSearch className="search-icon" />
           </div>
 
           <div className='mx-2'> <BsBell /> </div>
 
-          <div className='profile mx-2'> <BsFillCircleFill/> </div>
+          <div className='profile mx-2'> <CgProfile/> </div>
         </div>
 
       </div>
