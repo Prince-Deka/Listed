@@ -1,7 +1,15 @@
 import './App.css';
 // 488px
-// import Home from './components/Home';
+import Home from './components/Home';
 import Login from './components/Login/Login';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
+
+
+
+
 function App() {
   const innerleft = {
     width: "30rem",
@@ -20,11 +28,15 @@ function App() {
     top: "0px",
   }
   return (
-    
+
     // <div className=" flex flex-wrap justify-center my-20 ">
-      // <Home/>
+    // <Home/>
     // </div>
-    <Login/>
+    <Routes>
+      <Route path='/' element={<Login />}></Route>
+      <Route path='/home' element={<Home />}></Route>
+    </Routes>
+
   );
 }
 
