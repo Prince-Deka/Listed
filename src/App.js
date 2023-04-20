@@ -1,6 +1,7 @@
 import './App.css';
 // 488px
-import Home from './components/Home';
+// import Home from './components/Home';
+import Login from './components/Login/Login';
 function App() {
   const innerleft = {
     width: "30rem",
@@ -21,8 +22,9 @@ function App() {
   return (
     
     // <div className=" flex flex-wrap justify-center my-20 ">
-      <Home/>
+      // <Home/>
     // </div>
+    <Login/>
   );
 }
 
